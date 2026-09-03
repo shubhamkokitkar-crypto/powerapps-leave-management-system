@@ -1,79 +1,71 @@
 # Leave Management System
 
-## Overview
+A business-oriented **Leave Management System** developed using **Microsoft Power Platform** to manage employee leave requests, approvals, tracking, calendars, administration, and reporting.
 
-A business-oriented Leave Management System developed using Microsoft Power Platform for managing employee leave requests, approvals, tracking, and reporting.
+> **Portfolio Project:** This repository is a sanitized portfolio/demo representation and does not contain company-confidential data, credentials, production records, or internal configuration.
 
-## Technologies
+---
 
-* Power Apps
-* Power Automate
-* SharePoint
-* Power BI
-* Power Fx
+## 📌 Project Overview
 
-## Features
+The Leave Management System provides a centralized platform for employees, managers, and administrators to manage the complete employee leave process.
 
-* Leave request submission
-* Edit and delete leave requests
-* Manager approval and rejection
-* Leave status tracking
-* Attachments
-* Search and filtering
-* Pagination
-* Leave calendar
-* Dashboard and reports
-* SharePoint integration
-* Automated approval workflow
+The application helps organizations reduce manual work by providing:
 
-## Modules
+- Employee leave submission
+- Automated approval workflow
+- Leave status tracking
+- Manager approval and rejection
+- Leave calendar
+- Dashboard and reports
+- Organization configuration
+- User and role management
+- Security settings
+- Backup and restore management
 
-* Dashboard
-* Apply Leave
-* My Requests
-* Manager Approval
-* Leave Calendar
-* Reports
-* Settings
+---
 
-## Approval Workflow
+## 🛠️ Technology Stack
 
-Employee submits leave request
-↓
-Power Automate triggers
-↓
-Manager receives approval request
-↓
-Manager approves or rejects
-↓
-SharePoint status is updated
-↓
-Employee views updated status
+| Technology | Purpose |
+|---|---|
+| **Power Apps** | Canvas application and user interface |
+| **Power Automate** | Leave approval and notification automation |
+| **SharePoint** | Data storage and attachments |
+| **Power BI** | Reporting and analytics |
+| **Power Fx** | Application logic, validation, filtering, and calculations |
+| **Microsoft 365** | Business application environment |
 
-## Purpose
+---
 
-This project demonstrates practical experience in developing business applications using Microsoft Power Apps, Power Automate, SharePoint, and Power BI.
-## Screenshots
+## 🏗️ Application Architecture
 
-### 01. Dashboard
-![Dashboard](01-Dashboard.png)
-
-### 02. Apply Leave
-![Apply Leave](02-Apply-Leave.png)
-
-### 03. My Requests
-![My Requests](03-My-Requests.png)
-
-### 04. Manager Approval
-![Manager Approval](04-Manager-Approval.png)
-
-### 05. Leave Calendar
-![Leave Calendar](05-Leave-Calendar.png)
-
-### 06. Reports
-![Reports](06-Reports.png)
-
-### 07. Settings
-![Settings](07-Settings.png)
-
-**Note:** This repository is a portfolio/demo representation and does not contain company-confidential data, credentials, or production information.
+```text
+                    ┌─────────────────────┐
+                    │      Employee       │
+                    └──────────┬──────────┘
+                               │
+                               ▼
+                    ┌─────────────────────┐
+                    │     Power Apps      │
+                    │   Canvas Application│
+                    └──────────┬──────────┘
+                               │
+                ┌──────────────┴──────────────┐
+                │                             │
+                ▼                             ▼
+       ┌─────────────────┐          ┌─────────────────┐
+       │    SharePoint   │          │  Power Automate │
+       │   Data Storage  │◄────────►│ Approval Workflow│
+       └────────┬────────┘          └────────┬────────┘
+                │                            │
+                │                            ▼
+                │                   ┌─────────────────┐
+                │                   │ Manager Approval│
+                │                   └─────────────────┘
+                │
+                ▼
+       ┌─────────────────┐
+       │     Power BI    │
+       │ Reports & Charts│
+       └─────────────────┘
